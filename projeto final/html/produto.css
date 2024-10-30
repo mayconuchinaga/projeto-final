@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ABChanel PB SemiBold M";
+}
+
+body{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.produto{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0px;
+}
+
+.imagens-produto{
+    flex: 1;
+}
+
+.imagem-principal{
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.miniaturas img {
+    width: 70px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+ .detalhes-produto{
+    flex: 1.5;
+    justify-content: center;
+ }
+
+ h2{
+    color: #333;
+    margin-bottom: 10px;
+ }
+
+ .descricao{
+    color: #555;
+    margin-bottom: 15px;
+ }
+
+ .preco{
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+ }
+
+ .opcoes-compra{
+    display: flex;
+    flex-direction: column;
+ }
+
+ label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select{
+    padding: 10px;
+    background-color: transparent;
+    color: #000000;
+    border: blank;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: #151515;
+    color: #eee;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+  }
+  
+  .button:hover {
+    transform: translateY(3px);
+  }
+  
+  .button-span {
+    color: #aaa;
+  }
+  
+  p{
+    color: #555;
+  }
+
+  hr{
+    width: 310px;
+    color: #e3e3e3;  
+  }
+
+  nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #484848;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(211, 211, 211, 0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #d4d4d4; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+nav li a:before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease;
+}
+
+nav li a{
+    position: relative;
+    color: #000000;
+    padding: 6px 0;
+}
+
+nav li a:hover:before{
+    width: 100%;
+}
+
+.alec{
+    background-color: black;
+    padding: 0.2px;
+    width: 100;
+}
+
+.logo img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 1850px;
+    width: 20px;
+    display: block;
+}
+
+.logo1 img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 1810px;
+    width: 20px;
+    display: block;
+}
+
